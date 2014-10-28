@@ -19,15 +19,15 @@
  * @author    Ankit Kumar Agarwal
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
+namespace scormreport_myscormreport;
 defined('MOODLE_INTERNAL') || die();
 
-class scorm_myscormreport_report extends scorm_default_report {
+class report extends \mod_scorm\report {
     /**
      * displays the full report
-     * @param stdClass $scorm full SCORM object
-     * @param stdClass $cm - full course_module object
-     * @param stdClass $course - full course object
+     * @param \stdClass $scorm full SCORM object
+     * @param \stdClass $cm - full course_module object
+     * @param \stdClass $course - full course object
      * @param string $download - type of download being requested
      */
     function display($scorm, $cm, $course, $download) {
